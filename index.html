@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Luas dan Keliling Persegi Panjang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome To Katik</h1>
+        <p>Website sederhana untuk menghitung bangun datar Persegi Panjang</p>
+        <nav>
+            <ul>
+                <li id="link1"><a href="#">Hitung Luas</a></li>
+                <li id="link2"><a href="#">Hitung Keliling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <div class="img">
+            <img src=gambar.png>
+        </div>
+        <section id="luas">
+            <div id="formContainer1" style="display: none;">
+                <h2>Menghitung Luas Persegi Panjang</h2>
+                <form id="luasForm">
+                    <label for="luasPanjang">Panjang:</label>
+                    <input type="number" id="luasPanjang" required>
+                    <label for="luasLebar">Lebar:</label>
+                    <input type="number" id="luasLebar" required>
+                    <div class="tombol">
+                        <button type="submit">Hitung</button>
+                        <button type="reset">Reset</button>
+                    </div> 
+                </form>
+                <table id="jawaban1" style="display:none">
+                    <tr>
+                        <td>K = p x l <td>
+                    </tr>
+                    <tr>
+                        <td>K = <span id="method1"><td>
+                    </tr>
+                    <tr>
+                        <td>K = <span id="luasResult"></span><td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="keliling">
+            <div id="formContainer2" style="display: none;">
+                <h2>Menghitung Keliling Persegi Panjang</h2>
+                <form id="kelilingForm">
+                    <label for="kelilingPanjang">Panjang:</label>
+                    <input type="number" id="kelilingPanjang" required>
+                    <label for="kelilingLebar">Lebar:</label>
+                    <input type="number" id="kelilingLebar" required>
+                    <div class="tombol">
+                        <button type="submit">Hitung</button>
+                        <button type="reset" id="resetButton">Reset</button>
+                    </div>
+                </form>
+                <table id="jawaban2" style="display:none">
+                    <tr>
+                        <td>K = 2 (p + l) <td>
+                    </tr>
+                    <tr>
+                        <td>K = <span id="method2"></span><td>
+                    </tr>
+                    <tr>
+                        <td>K = <span id="kelilingResult"></span><td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            created by delya
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
